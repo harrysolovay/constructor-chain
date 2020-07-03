@@ -1,8 +1,8 @@
 # Constructor Chain
 
-[![npm version](https://img.shields.io/npm/v/constructor-chain.svg?style=flat-square)](https://badge.fury.io/js/constructor-chain)
-
 **"Chainables" enable chain-style extension of class statics in TypeScript.**
+
+---
 
 Compared with `class extends` syntax, chainables are a lighter mechanism for composition of metadata within constructors. The goal is to allow TypeScript library developers to treat constructors as more of a first-class data type. This pattern can serve libraries which aim to track state in user-provided constructors.
 
