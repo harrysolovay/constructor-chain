@@ -1,5 +1,5 @@
-import {IsExact, assert} from "conditional-type-checks";
-import {Chainable} from ".";
+import { IsExact, assert } from "conditional-type-checks";
+import { Chainable } from ".";
 
 describe("statics preserved when initializing with built-in constructors", () => {
   it("String", () => {

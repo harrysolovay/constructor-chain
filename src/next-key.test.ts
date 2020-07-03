@@ -1,5 +1,5 @@
-import {IsExact, assert} from "conditional-type-checks";
-import {Chainable} from ".";
+import { IsExact, assert } from "conditional-type-checks";
+import { Chainable } from ".";
 
 describe("next key", () => {
   it("Default", () => {

@@ -10,6 +10,8 @@ Compared with `class extends` syntax, chainables are a lighter mechanism for com
 
 ### Installation
 
+> `constructor-chain` is packaged in both ESM & CJS formats, alongside its type definitions.
+
 **Deno** users can reference from the GitHub source.
 
 `import_map.json`
@@ -31,7 +33,7 @@ npm install constructor-chain
 ### Basic Usage
 
 ```ts
-import {Chainable} from "constructor-chain";
+import { Chainable } from "constructor-chain";
 
 const A = Chainable(
   class {
@@ -97,12 +99,12 @@ However, if we want to then recombine these static fields in new constructors, t
 **GOOD**
 
 ```ts
-import {Chainable} from "constructor-chain";
+import { Chainable } from "constructor-chain";
 
 const CString = Chainable(OurString);
 
-const MinLengthString = CString.next({minLength: 8} as const);
-const MaxLengthString = CString.next({maxLength: 20} as const);
+const MinLengthString = CString.next({ minLength: 8 } as const);
+const MaxLengthString = CString.next({ maxLength: 20 } as const);
 const ForbiddenCharsString = CString.next({
   forbiddenChars: ["*", ")", ":"],
 } as const);
@@ -119,8 +121,8 @@ new ForbiddenCharsString("forbidden chars string"); // string
 Let's now abstract over chainables with a few helpers.
 
 ```ts
-import {OurString} from "./base-class"; // the constructor you wish make chainable
-import {minLength, maxLength, forbiddenChars} from "./helpers"; // your metadata factories
+import { OurString } from "./base-class"; // the constructor you wish make chainable
+import { minLength, maxLength, forbiddenChars } from "./helpers"; // your metadata factories
 
 const CString = Chainable(OurString);
 
