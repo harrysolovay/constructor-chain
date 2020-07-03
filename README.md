@@ -10,7 +10,7 @@ Compared with `class extends` syntax, chainables are a lighter mechanism for com
 
 ### Installation
 
-**Deno** users can reference from the GitHub source.
+**Deno** users can reference the GitHub source directly.
 
 `import_map.json`
 
