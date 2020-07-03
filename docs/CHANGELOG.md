@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/harrysolovay/constructor-chain/compare/v1.0.2...v1.0.3) (2020-07-03)
+
+
+### Bug Fixes
+
+* exclude tests from being built into dist ([59973b8](https://github.com/harrysolovay/constructor-chain/commit/59973b80fe23823480b31ba0f2a39aa137b0accb))
+
 ## [1.0.2](https://github.com/harrysolovay/constructor-chain/compare/v1.0.1...v1.0.2) (2020-07-03)
 
 
