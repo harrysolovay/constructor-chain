@@ -37,7 +37,7 @@ import { Chainable } from "constructor-chain";
 
 const A = Chainable(
   class {
-    readonly a = "Hello";
+    static readonly a = "Hello";
   },
 );
 
@@ -191,13 +191,13 @@ When providing statics to the `next` method, the `this` context is available.
 ```ts
 const A = Chainable(
   class {
-    readonly fqn = "j3$1Ks";
+    static readonly fqn = "j3$1Ks";
   },
 );
 
 const B = A.next({
   printFqn() {
-    console.log(fqn);
+    console.log(this.fqn);
   },
 });
 
@@ -211,7 +211,7 @@ To supplement an alternative method name for `next`, pass the desired name as th
 ```ts
 const A = Chainable(
   class {
-    readonly first = "first";
+    static readonly first = "first";
   },
   "proceed",
 );
