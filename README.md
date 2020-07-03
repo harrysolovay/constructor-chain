@@ -1,6 +1,6 @@
 # Constructor Chain
 
-[![npm version](https://img.shields.io/npm/v/constructor-chain.svg?style=flat-square)](https://badge.fury.io/js/constructor-chain) ![license](https://img.shields.io/npm/l/constructor-chain.svg?style=flat-square) [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/harrysolovay/constructor-chain/blob/master/CONTRIBUTING.md#submitting-pull-requests) [![Build Status](https://img.shields.io/travis/harrysolovay/constructor-chain.svg?style=flat-square)](https://travis-ci.org/harrysolovay/constructor-chain) [![downloads](https://img.shields.io/npm/dm/constructor-chain.svg?style=flat-square)](https://www.npmjs.com/package/constructor-chain)
+[![npm version](https://img.shields.io/npm/v/constructor-chain.svg?style=flat-square)](https://badge.fury.io/js/constructor-chain)
 
 **"Chainables" enable chain-style extension of class statics in TypeScript.**
 
