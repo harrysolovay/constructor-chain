@@ -2,7 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/constructor-chain.svg?style=flat-square)](https://badge.fury.io/js/constructor-chain) ![license](https://img.shields.io/npm/l/constructor-chain.svg?style=flat-square) [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/harrysolovay/constructor-chain/blob/master/CONTRIBUTING.md#submitting-pull-requests) [![Build Status](https://img.shields.io/travis/harrysolovay/constructor-chain.svg?style=flat-square)](https://travis-ci.org/harrysolovay/constructor-chain) [![downloads](https://img.shields.io/npm/dm/constructor-chain.svg?style=flat-square)](https://www.npmjs.com/package/constructor-chain)
 
-"Chainables" enable chain-style extension of class statics in TypeScript.
+**"Chainables" enable chain-style extension of class statics in TypeScript.**
 
 Compared with `class extends` syntax, Chainables are a lighter mechanism for composition of metadata within constructors. The goal is to allow TypeScript library developers to treat constructors as more of a first-class data type. For libraries which aim to track state in user-provided constructors, this pattern is indispensible.
 
