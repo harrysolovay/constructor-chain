@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/harrysolovay/constructor-chain/compare/v1.0.3...v1.0.4) (2020-07-03)
+
+
+### Bug Fixes
+
+* exclude more files from NPM tar ([21fcdcb](https://github.com/harrysolovay/constructor-chain/commit/21fcdcb49d036f58f66bbf08bc89f598e2b38862))
+
 ## [1.0.3](https://github.com/harrysolovay/constructor-chain/compare/v1.0.2...v1.0.3) (2020-07-03)
 
 
