@@ -95,7 +95,7 @@ class ForbiddenChars extends OurString {
 }
 ```
 
-However, if we want to then recombine these static fields in new constructors, this becomes tedios. We end up writing a lot more than the chainable equivalent:
+If we want to then recombine these static fields in new constructors, this becomes tedios. We end up writing a lot more than the chainable equivalent:
 
 **GOOD**
 
