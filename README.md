@@ -157,7 +157,7 @@ const [A, B, C] = keys.map((e) => {
 });
 ```
 
-The above is entirely possible using chainables, and produces no compiler error.
+Let's see how chainables make this possible, without producing a compile error.
 
 **GOOD**
 
@@ -186,7 +186,7 @@ new C();
 
 ### `this` Context
 
-When providing statics to the `next` method, the `this` context is available.
+When providing statics to the `next` method, the `this` context (the aggregated chain of contexts) is available.
 
 ```ts
 const A = Chainable(
