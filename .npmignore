@@ -2,10 +2,11 @@
 .vscode
 example
 src
-.editoroconfig
+.editorconfig
 .eslintrc
 .gitignore
 .prettierrc
-.cspell.json
+cspell.json
 tsconfig.*
 typedoc.json
+coverage
