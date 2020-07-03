@@ -186,7 +186,7 @@ new C();
 
 ### `this` Context
 
-When providing statics to the `next` method, the `this` context (the aggregated chain of contexts) is available.
+When providing statics to the `next` method, the `this` context (the aggregate of the chain's contexts) is available.
 
 ```ts
 const A = Chainable(
