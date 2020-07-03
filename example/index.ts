@@ -1,4 +1,4 @@
-import {Chainable} from "../src";
+import { Chainable } from "../src";
 
 class BaseString extends Chainable(
   class extends String {

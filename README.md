@@ -41,15 +41,15 @@ const A = Chainable(
   },
 );
 
-A.a; // type "hello"
+A.a; // type `"hello"`
 new A(); // instance of `A`
 
 const B = A.next({
   b: "chainables",
 } as const);
 
-B.a; // type "hello"
-B.b; // type "chainable"
+B.a; // type `"hello"`
+B.b; // type `"chainable"`
 new B(); // instance of `B` (subtype of `A`)
 
 const C = B.next({
@@ -114,9 +114,9 @@ const ForbiddenCharsString = CString.next({
 These all remain valid constructors.
 
 ```ts
-new MinLengthString("min length string"); // string
-new MaxLengthString("max length string"); // string
-new ForbiddenCharsString("forbidden chars string"); // string
+new MinLengthString("min length string"); // type `string`
+new MaxLengthString("max length string"); // type `string`
+new ForbiddenCharsString("forbidden chars string"); // type `string`
 ```
 
 Let's now abstract over chainables with a few helpers.
@@ -132,11 +132,54 @@ const MaxLengthString = CString.next(maxLength(20));
 const ForbiddenCharsString = CString.next(forbiddenChars(["*", ")", ":"]));
 ```
 
-The chainable constructors can be used to produce new constructors. This enhances the composability of creating new constructors with differing variations of statics.
+We can pass metadata down the chain as well.
 
 ```ts
 const MinLengthString = CString.next(minLength(8));
 const MinMaxLengthString = MinLengthString.next(maxLength(20));
+```
+
+The chainable constructors can be used to produce new constructors. Statics are represented as an intersection of the initial constructor and a recursive object type, generic over the chain; this representation allows us to overcome the thoughtful, yet sometimes annoying limitations of static properties in TypeScript.
+
+For instance, one cannot write the following without producing TS error 1166 (`A computed property name in a class property declaration must refer to an expression whose type is a literal type or a 'unique symbol'`).
+
+**BAD**
+
+```ts
+class Base {}
+
+const keys = ["a", "b", "c"] as const;
+
+const [A, B, C] = keys.map((e) => {
+  return class extends Base {
+    static [e] = e;
+  };
+});
+```
+
+The above is entirely possible using chainables, and produces no compiler error.
+
+**GOOD**
+
+```ts
+const Base = Chainable(class {});
+
+const keys = ["a", "b", "c"] as const;
+
+const [A, B, C] = keys.map((e) => Base.next({ [e]: e }));
+```
+
+**Caveat**
+
+```ts
+A.a; // type `any`
+new A();
+
+B.b; // type `any`
+new B();
+
+C.c; // type `any`
+new C();
 ```
 
 ## Nooks & Crannies
