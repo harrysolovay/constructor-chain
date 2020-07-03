@@ -10,8 +10,6 @@ Compared with `class extends` syntax, chainables are a lighter mechanism for com
 
 ### Installation
 
-> `constructor-chain` is packaged in both ESM & CJS formats, alongside its type definitions.
-
 **Deno** users can reference from the GitHub source.
 
 `import_map.json`
@@ -29,6 +27,8 @@ Compared with `class extends` syntax, chainables are a lighter mechanism for com
 ```sh
 npm install constructor-chain
 ```
+
+> `constructor-chain` is packaged in both ESM & CJS formats, alongside its type definitions.
 
 ### Basic Usage
 
