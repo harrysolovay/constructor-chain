@@ -6,7 +6,7 @@
 
 Compared with `class extends` syntax, chainables are a lighter mechanism for composition of metadata within constructors. The goal is to allow TypeScript library developers to treat constructors as more of a first-class data type. This pattern can serve libraries which aim to track state in user-provided constructors.
 
-## Show Me The Code!
+## Getting Started
 
 ### Installation
 
