@@ -224,7 +224,7 @@ const B = A.proceed({
 
 ### Note
 
-Often in programming, its unclear how a piece of technology will be used. TypeScript's type system has advanced far beyond that of any other language, perhaps with the exception of Scala 3 (according to my collaborator & mentor [Sam Goodwin](https://github.com/sam-goodwin)). That being said, TypeScript's statics are odd beasts: this library could be described as **virtualizing the composition of statics**. How exactly this will aid in anyone's fight against current limitations of the TypeScript compiler, I do not know. If you have a use case in mind, or feedback more generally, please do reach out! Thank you!
+If you're a PM, you might disagree with the following statement: its alright if it's unclear how a piece of technology will be used. This library was built primarily out of enjoyment of the process, and its use cases are a secondary consideration. I do believe the `Chainable` type has its place, but who knows?! TypeScript's statics are odd beasts. Chainables allow us to represent them without actually making use of the type system's representation of statics. This enables us to tackle more composition patterns without those gruesome red squiglies. Plus, less boilerplate! If you have a use case in mind, or feedback more generally, please do reach out––I'd love to hear from you! Thank you!
 
 ### License
 
