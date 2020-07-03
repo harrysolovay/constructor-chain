@@ -95,7 +95,7 @@ class ForbiddenChars extends OurString {
 }
 ```
 
-If we want to then recombine these static fields in new constructors, this becomes tedios. We end up writing a lot more than the chainable equivalent:
+If we want to then recombine these static fields in new constructors, this becomes tedious. We end up writing a lot more than the chainable equivalent:
 
 **GOOD**
 
@@ -224,7 +224,7 @@ const B = A.proceed({
 
 ### Note
 
-If you're a PM, you might disagree with the following statement: its alright if it's unclear how a piece of technology will be used. This library was built primarily out of enjoyment of the process, and its use cases are a secondary consideration. I do believe the `Chainable` type has its place, but who knows?! TypeScript's statics are odd beasts. Chainables allow us to represent them without actually making use of the type system's representation of statics. This enables us to tackle more composition patterns without those gruesome red squiglies. Plus, less boilerplate! If you have a use case in mind, or feedback more generally, please do reach out––I'd love to hear from you! Thank you!
+It's my humble belief that its alright if it's unclear how a piece of technology will be used. This library was built primarily out of enjoyment of the process, and its use cases are a secondary consideration. I do believe the `Chainable` type has its place, but who knows? TypeScript's statics are unusual beasts: chainables allow us to represent them without actually making use of the type system's representation of statics. This enables us to tackle more composition patterns without those gruesome red squiglies (in addition to reducing inheritance boilerplate). If you have a use case in mind, or feedback more generally, please do reach out––I'd love to hear from you!
 
 ### License
 
