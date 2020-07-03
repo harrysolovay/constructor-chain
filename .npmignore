@@ -1,0 +1,11 @@
+.github
+.vscode
+example
+src
+.editoroconfig
+.eslintrc
+.gitignore
+.prettierrc
+.cspell.json
+tsconfig.*
+typedoc.json
