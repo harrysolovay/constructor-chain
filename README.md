@@ -50,7 +50,7 @@ const B = A.next({
 
 B.a; // type "hello"
 B.b; // type "chainable"
-new B(); // instance of `B`
+new B(); // instance of `B` (subtype of `A`)
 
 const C = B.next({
   staticsToString() {
@@ -60,6 +60,7 @@ const C = B.next({
 });
 
 C.staticsToString(); // `Hello chainables!`
+new C(); // instance of `C` (subtype of `B`)
 ```
 
 ## Usage Continued
