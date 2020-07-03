@@ -122,7 +122,6 @@ new ForbiddenCharsString("forbidden chars string"); // type `string`
 Let's now abstract over chainables with a few helpers.
 
 ```ts
-import { OurString } from "./base-class"; // the constructor you wish make chainable
 import { minLength, maxLength, forbiddenChars } from "./helpers"; // your metadata factories
 
 const CString = Chainable(OurString);
