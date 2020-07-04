@@ -10,14 +10,14 @@ Compared with `class extends` syntax, "chainables" are a lighter mechanism for c
 
 ### Installation
 
-**Deno** users can reference the GitHub source directly.
+**Deno** users can reference the GitHub source directly (make sure to specify the version).
 
 `import_map.json`
 
 ```json
 {
   "imports": {
-    "constructor-chain": "https://raw.githubusercontent.com/harrysolovay/constructor-chain/master/src/index.ts"
+    "constructor-chain": "https://github.com/harrysolovay/constructor-chain/blob/v[x.x.x]/src/index.ts"
   }
 }
 ```
