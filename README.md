@@ -42,14 +42,14 @@ const A = Chainable(
 );
 
 A.a; // type `"hello"`
-new A(); // instance of `A`
+new A(); // instance of `A`, which is extended from the anonymous class
 
 const B = A.next({
   b: "chainables",
 } as const);
 
 B.a; // type `"hello"`
-B.b; // type `"chainable"`
+B.b; // type `"chainables"`
 new B(); // instance of `B` (subtype of `A`)
 
 const C = B.next({
