@@ -4,7 +4,7 @@
 
 ---
 
-Compared with `class extends` syntax, "chainables" are a lighter mechanism for composition of metadata within constructors. The goal is to allow TypeScript library developers to treat constructors as more of a first-class data type. This pattern can serve libraries which aim to track state in user-provided constructors.
+Compared with `class extends` syntax, "chainables" are a lighter mechanism for composition of metadata within constructors. The goal is to allow TypeScript library developers to treat constructors as more of first-class data types. This pattern can serve libraries which aim to track state in user-provided constructors.
 
 ## Getting Started
 
@@ -223,7 +223,7 @@ const B = A.proceed({
 
 ### Note
 
-It's my humble belief that its alright if it's unclear how a piece of technology will be used. This library was built primarily out of enjoyment of the process, and its use cases are a secondary consideration. I do believe the `Chainable` type has its place, but who knows? TypeScript's statics are unusual beasts: chainables allow us to represent them without actually making use of the type system's representation of statics. This enables us to tackle more composition patterns without those gruesome red squiglies (in addition to reducing inheritance boilerplate). If you have a use case in mind, or feedback more generally, please do reach out––I'd love to hear from you!
+It's my humble belief that its alright if it's unclear how a piece of technology will be used. This library was built primarily out of enjoyment of the process, and its use cases are a secondary consideration. I do believe the `Chainable` type has its place, but who knows? TypeScript's statics are unusual beasts: chainables allow us to represent them without actually making use of the type system's representation of statics. This enables us to tackle more composition patterns without compiler errors, in addition to reducing inheritance boilerplate. If you have a use case in mind, or feedback more generally, please do reach out––I'd love to hear from you!
 
 ### License
 
