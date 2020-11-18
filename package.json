@@ -54,7 +54,7 @@
     "husky": "^4.2.1",
     "jest": "^25.1.0",
     "prettier": "^2.0.5",
-    "semantic-release": "^17.0.4",
+    "semantic-release": "^17.2.3",
     "ts-jest": "^25.0.0",
     "ts-node": "^8.6.2",
     "typedoc": "^0.17.5",
